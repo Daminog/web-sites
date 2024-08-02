@@ -1,0 +1,36 @@
+.footer {
+    svg {
+        color: var(--color-dark-alt);
+    }
+    background: #f9f9fb;
+   padding-block: 38px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copiright {
+        font-family: var(--third-family);
+        font-weight: 400;
+        line-height: 1.8;
+        color: var(--color-gray-alt);
+
+        @include fluid-text(12, 14);
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 32px;
+
+        @include tablet-above {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__item {
+        @include flex-center;
+    }
+}

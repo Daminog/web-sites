@@ -1,0 +1,6 @@
+.section {
+    padding-block: var(--section-padding-y);
+    @include desktop-above {
+        --section-padding-y: 45px;
+    }
+}

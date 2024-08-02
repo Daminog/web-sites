@@ -1,0 +1,28 @@
+.header {
+    padding-inline: var(--container-padding-x);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+        padding-block: 18px 40px;
+        @include desktop-above {
+            padding-block: 29px 33px;
+        }
+    }
+
+    &__button {
+        background-color: var(--color-gray);
+        padding: 10px 24px;
+        height: 38px;
+    }
+
+    &__logo {
+       &-image {
+        max-width: 230px;
+        width: 44.3vw;
+        height: auto;
+       } 
+    }
+}

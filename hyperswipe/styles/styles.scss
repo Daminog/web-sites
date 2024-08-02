@@ -1,0 +1,19 @@
+@import 'normalize',
+'fonts',
+'mixins',
+'media',
+'utils',
+'variables',
+'globals';
+
+@import 'blocks/section',
+        'blocks/button',
+        'blocks/banner',
+        'blocks/header',
+        'blocks/hero',
+        'blocks/partners',
+        'blocks/steps',
+        'blocks/features',
+        'blocks/advert',
+        'blocks/moving',
+        'blocks/footer';

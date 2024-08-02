@@ -1,0 +1,40 @@
+.partners {
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 17px;
+        column-gap: 27px;
+
+        @include tablet-above {
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 50px;
+
+        }
+    }
+
+    &__image {
+        &-first {
+            @include fluid-width(156, 277);
+            max-height: 40px;
+        }
+
+        &-second {
+            @include fluid-width(127, 202);
+            max-height: 40px;
+        }
+
+        &-third {
+            @include fluid-width(144, 209);
+            max-height: 40px;
+        }
+
+        &-fourth {
+            @include fluid-width(139, 307);
+            max-height: 40px;
+        }
+    }
+}

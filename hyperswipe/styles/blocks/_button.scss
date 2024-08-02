@@ -1,0 +1,16 @@
+.button {
+    border-radius: var(--border-radius-button);
+    border: none;
+    background-color: var(--color-strawberry);
+    color: var(--color-light);
+    padding: 16px 50px;
+
+    @include flex-center;
+    @include fluid-text(14, 18);
+    @include desktop-above {
+        padding-inline: 48px;
+    }
+    @include hover {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,77 @@
+.steps {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__suptitle {
+        color: var(--color-strawberry);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    &__cards {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+
+            @include desktop-above {
+                flex-direction: row;
+                column-gap: 30px
+            }
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 42px;
+            width: 327px;
+            height: 262px;
+            background-color: var(--color-dark-alt);
+            border-radius: var(--border-radius-large);
+
+            @include desktop-above {
+                width: 264px;
+            }
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 12px;
+        }
+
+        &-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 71px;
+            height: 28px;
+            background-color: var(--color-strawberry);
+            border-radius: var(--border-radius-button);
+        }
+        
+        &-description {
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--color-gray-alt);
+            max-width: 200px;
+            min-height: 54px;
+        }
+    }
+
+}
